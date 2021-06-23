@@ -2,7 +2,28 @@
 
 namespace NewRepo
 {
-    class Program
+    class decrypt
+
+        class decrypt
+    {
+        public static string EncryptString(string files, string plainText)
+        {
+
+            {
+                string fileName = @"C:\Users\HP\Desktop\materials\products;
+
+                 Console.WriteLine("Please enter a string for encryption");  
+            var str = Console.ReadLine();
+            var encryptedString = AesOperation.EncryptString(key, str);
+                Console.WriteLine($"encrypted string = {encryptedString}");
+
+                var decryptedString = AesOperation.DecryptString(key, encryptedString);
+                Console.WriteLine($"decrypted string = {decryptedString}");
+
+                Console.ReadKey();
+
+            }
+        }
     {
         static void Main(string[] args)
         {
