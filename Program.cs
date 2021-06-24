@@ -14,8 +14,8 @@ namespace NewRepo
                 string fileName = @"C:\Users\HP\Desktop\materials\products;
 
                  Console.WriteLine("Please enter a string for encryption");  
-            var str = Console.ReadLine();
-            var encryptedString = AesOperation.EncryptString(key, str);
+                var str = Console.ReadLine();
+                var encryptedString = AesOperation.EncryptString(key, str);
                 Console.WriteLine($"encrypted string = {encryptedString}");
 
                 var decryptedString = AesOperation.DecryptString(key, encryptedString);
