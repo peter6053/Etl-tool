@@ -11,16 +11,16 @@ namespace NewRepo
         {
 
             {
-                string fileName = @"C:\Users\HP\Desktop\materials\products;
+                string path = @"C:\Users\HP\Desktop\materials\products.tsv;
 
-                 Console.WriteLine("Please enter a string for encryption");  
+                 Console.WriteLine("Please enter a  path encryption");  
                 var str = Console.ReadLine();
                 var encryptedString = AesOperation.EncryptString(key, str);
                 Console.WriteLine($"encrypted string = {encryptedString}");
 
                 var decryptedString = AesOperation.DecryptString(key, encryptedString);
-                Console.WriteLine($"decrypted string = {decryptedString}");
-
+                Console.WriteLine($"decrypted string = {decryptedString}"); 
+                
                 Console.ReadKey();
 
             }
