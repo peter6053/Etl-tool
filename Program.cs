@@ -1,31 +1,28 @@
 ﻿using System;
-using System.Security.Cryptography;
+using System.io;
+
 
 namespace NewRepo
 {
-    class decrypt
+    class read
 
-        class decrypt
+        
     {
-        public static string EncryptString(string files, string plainText)
+        public static string read (string files,)
         {
-
+            using (StreamReader sr = File.OpenText(@"C:\Users\HP\Desktop\materials\products.tsv))
             {
-                string path = @"C:\Users\HP\Desktop\materials\products.tsv;
+                string s;
+                while ((s = sr.ReadLine()) != null)
+                {
+                    Console.WriteLine(s);
+                }
 
-                 Console.WriteLine("Please enter a  path encryption");  
-                var str = Console.ReadLine();
-                var encryptedString = AesOperation.EncryptString(key, str);
-                Console.WriteLine($"encrypted string = {encryptedString}");
-
-                var decryptedString = AesOperation.DecryptString(key, encryptedString);
-                Console.WriteLine($"decrypted string = {decryptedString}"); 
-                
-                Console.ReadKey();
+               
 
             }
         }
-    {
+    
         static void Main(string[] args)
         {
             var cs = @"Server=localhost\SQLEXPRESS;Database=etl;Trusted_Connection=True;";
