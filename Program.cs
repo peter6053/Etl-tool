@@ -1,37 +1,48 @@
 ﻿using System;
 using System.io;
+using system.text;
+
+
+static void Main(string[] args);
 
 
 namespace NewRepo
 {
-    class read
-
-        
+   class read
     {
-        public static string read (string files,)
+        public static string read(string files, string)
         {
-            using (StreamReader sr = File.OpenText(@"C:\Users\HP\Desktop\materials\products.tsv))
+            using (streamreader sr = files.openText(@"C:\Users\HP\Desktop\materials\products.tsv"))
             {
-                string s;
+                string S;
                 while ((s = sr.ReadLine()) != null)
-                {
-                    Console.WriteLine(s);
-                }
 
-               
+                {   
+                    Console.WriteLine(S);
+
+                }
 
             }
         }
-    
-        static void Main(string[] args)
-        {
-            var cs = @"Server=localhost\SQLEXPRESS;Database=etl;Trusted_Connection=True;";
-
-            using var con = new SqlConnection(cs);
-            con.Open();
-        }
-        {
-            Console.WriteLine("Hello World!");
-        }
     }
+
+    
+        
 }
+        
+    
+
+
+
+       // static void Main(string[] args)
+        //{
+            //var cs = @"Server=localhost\SQLEXPRESS;Database=etl;Trusted_Connection=True;";
+
+            //using var con = new SqlConnection(cs);
+            //con.Open();
+       // }
+       // {
+           // Console.WriteLine("Hello World!");
+       // }
+   //}
+//}
