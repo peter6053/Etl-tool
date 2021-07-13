@@ -7,6 +7,11 @@ namespace NewRepo
 {
     class Program
     {
+        // 1. Read the files from drive
+        // 2. Decrypt files data
+        // 3. Read/Parse data from .tsv to rows and columns
+        // 4. Upload this data to database
+        
         static void Main(string[] args)
         {
             // Path to the file in your file system.
