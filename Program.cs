@@ -30,14 +30,13 @@ namespace NewRepo
             // IMPORTANT! to close the Stream.
             fileStream.Close();
             fileStream.Dispose();
-
             //decryptfiles
 
-             {
-                 public static void RemoveEncryption(string Filepath)
-                 var filePath = "C:\Users\HP\Desktop\materials";
-                 File.Decrypt( string  filepath);
-             }
+            File.Decrypt(filePath)
+
+            
+
+    
 
             // read myClass = new read();
             // myClass.rea("some string");
