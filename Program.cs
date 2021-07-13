@@ -26,6 +26,7 @@ namespace NewRepo
             fileStream.Close();
             fileStream.Dispose();
 
+
              {
                  public static void RemoveEncryption(string Filepath)
                  var filePath = "C:\Users\HP\Desktop\materials";
