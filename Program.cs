@@ -31,6 +31,7 @@ namespace NewRepo
             fileStream.Close();
             fileStream.Dispose();
 
+            //decryptfiles
 
              {
                  public static void RemoveEncryption(string Filepath)
