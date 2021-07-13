@@ -10,7 +10,7 @@ namespace NewRepo
         static void Main(string[] args)
         {
             // Path to the file in your file system.
-            var filePath = "your path to file";
+            var filePath = "C:\Users\HP\Desktop\materials";
             
             // Read all file data to the memory using File class.
             var allText = File.ReadAllText(filePath);
@@ -25,6 +25,12 @@ namespace NewRepo
             // IMPORTANT! to close the Stream.
             fileStream.Close();
             fileStream.Dispose();
+
+             {
+                 public static void RemoveEncryption(string Filepath)
+                 var filePath = "C:\Users\HP\Desktop\materials";
+                 File.Decrypt( string  filepath);
+             }
 
             // read myClass = new read();
             // myClass.rea("some string");
