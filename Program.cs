@@ -32,11 +32,27 @@ namespace NewRepo
             fileStream.Dispose();
             //decryptfiles
 
-            File.Decrypt(filePath)
+            Convert.FromBase64String(allText);
+
+            Console.WriteLine(allText);
+
+            //parse the files
+            
+            byte[] data = Convert.FromBase64String(allText);
+
+            Console.WriteLine(allText);
+
+            string decodedString = Encoding.UTF8.GetString(data);
+
+            Console.WriteLine(allText);
+
 
             
 
-    
+
+
+
+
 
             // read myClass = new read();
             // myClass.rea("some string");
