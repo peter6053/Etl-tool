@@ -15,7 +15,7 @@ namespace NewRepo
         static void Main(string[] args)
         {
             // Path to the file in your file system.
-            var filePath = @"C:\Users\HP\Desktop\materials\products.tsv";
+            var filePath = @"C:\Users\peter\Desktop\materials\products.tsv";
             
             // Read all file data to the memory using File class.
             var allText = File.ReadAllText(filePath);
