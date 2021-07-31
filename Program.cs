@@ -46,13 +46,15 @@ namespace NewRepo
 
             string decodedString = Encoding.UTF8.GetString(data);
 
+            //upload data to the database.
+           
             Console.WriteLine(allText);
             {
                 var cs = @"Server=localhost\SQLEXPRESS;Database=etl;Trusted_Connection=True;";
 
                 using var con = new SqlConnection(cs);
                 con.Open();
-                 }
+             }
 
 
             
