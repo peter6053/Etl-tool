@@ -1,6 +1,8 @@
 ﻿using System;
 using System.IO;
 using System.Text;
+using System.Data.SqlClient;
+using Dapper;
 
 
 namespace NewRepo
@@ -45,6 +47,12 @@ namespace NewRepo
             string decodedString = Encoding.UTF8.GetString(data);
 
             Console.WriteLine(allText);
+            {
+                var cs = @"Server=localhost\SQLEXPRESS;Database=etl;Trusted_Connection=True;";
+
+                using var con = new SqlConnection(cs);
+                con.Open();
+                 }
 
 
             
