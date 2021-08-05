@@ -36,9 +36,9 @@ namespace NewRepo
             public static string void decryptfiles(string filepath, sting key)
                 {
                     byte[] encrypted = File.ReadAllBytes(filepath);
+                    var decryptor = aes.CreateDecryptor
 
-
-        }
+               }
             Convert.FromBase64String(allText);
 
             Console.WriteLine(allText)
