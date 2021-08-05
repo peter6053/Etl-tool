@@ -33,12 +33,16 @@ namespace NewRepo
             fileStream.Close();
             fileStream.Dispose();
             //decryptfiles
+            public static string void decryptfiles(string filepath, sting key)
+                {
+                    byte[] encrypted = File.ReadAllBytes(filepath);
 
+
+        }
             Convert.FromBase64String(allText);
 
-            Console.WriteLine(allText);
+            Console.WriteLine(allText)
 
-            //parse the files
             
             byte[] data = Convert.FromBase64String(allText);
 
