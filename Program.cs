@@ -43,14 +43,15 @@ namespace NewRepo
 
             Console.WriteLine(File)
             class parsedata
+                static void main(string[] args)
                 {
-                        TextReader.parsedata
-                         GetParsedata.tsv
-                           console.writeline();
+                    TextReader.parsedata
+                    GetParsedata.tsv
+                    console.writeline();
 
            
 
-             }
+                }
             
             byte[] data = Convert.FromBase64String(allText);
 
