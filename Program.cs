@@ -45,9 +45,10 @@ namespace NewRepo
             class parsedata
                 static void main(string[] args)
                 {
+                    var allTEXT= parsedata.ReferenceEquals
                     TextReader.parsedata
                     GetParsedata.tsv
-                    console.writeline();
+                    console.writeline(parsedata);
 
            
 
