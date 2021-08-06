@@ -41,8 +41,16 @@ namespace NewRepo
                }
             Convert.FromBase64String(allText);
 
-            Console.WriteLine(allText)
+            Console.WriteLine(File)
+            class parsedata
+                {
+                        TextReader.parsedata
+                         GetParsedata.tsv
+                           console.writeline();
 
+           
+
+             }
             
             byte[] data = Convert.FromBase64String(allText);
 
