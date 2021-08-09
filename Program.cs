@@ -2,11 +2,26 @@
 using System.IO;
 using System.Text;
 using System.Data.SqlClient;
-using Dapper;
+//using Dapper;
 
 
 namespace NewRepo
 {
+    class ParseData
+    {
+        // static void main(string[] args)
+        // {
+        //     var allTEXT= parsedata.ReferenceEquals
+        //     TextReader.parsedata
+        //     GetParsedata.tsv
+        //     console.writeline(parsedata);
+        //
+        //    
+        //
+        // }
+    }
+    
+    
     class Program
     {
         // 1. Read the files from drive
@@ -17,11 +32,10 @@ namespace NewRepo
         static void Main(string[] args)
         {
             // Path to the file in your file system.
-            var filePath = @"C:\Users\peter\Desktop\materials\products.tsv";
-            
-            // Read all file data to the memory using File class.
-            var allText = File.ReadAllText(filePath);
-            Console.WriteLine(allText);
+            var filePath = @"/Users/alex/Work/Eyasys/SUNami Solar/Files/Candidates/Project 3 - Peter Njuguna/companies-encrypted.tsv";
+
+            var allText = ReadFile(filePath);
+            var decryptedText = DecryptFiles(allText);
 
             // Read file by lines of code using StreamReader.
             var fileStream = File.OpenText(filePath);
@@ -33,42 +47,23 @@ namespace NewRepo
             fileStream.Close();
             fileStream.Dispose();
             //decryptfiles
-            public static string void decryptfiles(string filepath, sting key)
-                {
-                    byte[] encrypted = File.ReadAllBytes(filepath);
-                    var decryptor = aes.CreateDecryptor
-
-               }
+            
             Convert.FromBase64String(allText);
 
-            Console.WriteLine(File)
-            class parsedata
-                static void main(string[] args)
-                {
-                    var allTEXT= parsedata.ReferenceEquals
-                    TextReader.parsedata
-                    GetParsedata.tsv
-                    console.writeline(parsedata);
-
-           
-
-                }
+            //Console.WriteLine(File);
             
-            byte[] data = Convert.FromBase64String(allText);
-
-            Console.WriteLine(allText);
-
-            string decodedString = Encoding.UTF8.GetString(data);
+            
+            
 
             //upload data to the database.
            
             Console.WriteLine(allText);
-            {
+            
                 var cs = @"Server=localhost\SQLEXPRESS;Database=etl;Trusted_Connection=True;";
 
                 using var con = new SqlConnection(cs);
                 con.Open();
-             }
+             
 
 
             
@@ -83,6 +78,21 @@ namespace NewRepo
             // StreamReader reader = new StreamReader(fileName);
             // //streamreader => StreamReader
             // // your code
+        }
+
+        public static string ReadFile(string filePath)
+        {
+            // Read all file data to the memory using File class.
+            var allText = File.ReadAllText(filePath);
+            Console.WriteLine(allText);
+
+            return allText;
+        }
+        
+        public static string DecryptFiles(string encryptedText)
+        {
+            byte[] data = Convert.FromBase64String(encryptedText);
+            return Encoding.Unicode.GetString(data);
         }
     }
 
