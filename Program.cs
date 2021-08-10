@@ -32,10 +32,11 @@ namespace NewRepo
         static void Main(string[] args)
         {
             // Path to the file in your file system.
-            var filePath = @"/Users/alex/Work/Eyasys/SUNami Solar/Files/Candidates/Project 3 - Peter Njuguna/companies-encrypted.tsv";
-
+            var filePath = @"C/Users/peter/Desktop/materials/products.tsv";
+            
             var allText = ReadFile(filePath);
             var decryptedText = DecryptFiles(allText);
+            var parsed = 
 
             // Read file by lines of code using StreamReader.
             var fileStream = File.OpenText(filePath);
@@ -62,16 +63,7 @@ namespace NewRepo
                 var cs = @"Server=localhost\SQLEXPRESS;Database=etl;Trusted_Connection=True;";
 
                 using var con = new SqlConnection(cs);
-                con.Open();
-             
-
-
-            
-
-
-
-
-
+                con.Open()
 
             // read myClass = new read();
             // myClass.rea("some string");
@@ -91,9 +83,35 @@ namespace NewRepo
         
         public static string DecryptFiles(string encryptedText)
         {
+            //Decrypt files.
             byte[] data = Convert.FromBase64String(encryptedText);
             return Encoding.Unicode.GetString(data);
         }
+
+        public static string parse (string parsefile)
+        {
+
+            var allText = ParseData.ReferenceEquals
+             TextReader.parsedata
+             GetParsedata.tsv
+             Console.WriteLine(ParseData);
+             return ParseData;
+
+
+        }
+
+        
+ }   }
+        
+        
+        
+        
+       
+
+
+
+             
+        
     }
 
     // class read
