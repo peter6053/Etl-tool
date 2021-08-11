@@ -36,7 +36,7 @@ namespace NewRepo
             
             var allText = ReadFile(filePath);
             var decryptedText = DecryptFiles(allText);
-            var parsed = parsed1(ParseData);
+            var parsed = 
 
             // Read file by lines of code using StreamReader.
             var fileStream = File.OpenText(filePath);
@@ -91,7 +91,7 @@ namespace NewRepo
         public static string parse (string parsefile)
         {
 
-            var allText = ParseData1.ReferenceEquals
+            var allText = ParseData.ReferenceEquals
              TextReader.parsedata
              GetParsedata.tsv
              Console.WriteLine(ParseData);
