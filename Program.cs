@@ -9,11 +9,35 @@ namespace NewRepo
 {
     class ParseData
     {
+         static void Main(string[] args)
+        {
+            var data
+                // Taking a string
+            String str = "products,";
+  
+            
+  
+            // using the method
+            String[] strlist = str.Split(spearator, count);
+  
+            foreach(String s in strlist)
+            {
+                Console.WriteLine(datass);
+            }
+            
 
 
+        }
+        
+
+
+
+        
 
 
     }
+
+    
     
     
     class Program
@@ -30,7 +54,7 @@ namespace NewRepo
             
             var allText = ReadFile(filePath);
             var decryptedText = DecryptFiles(allText);
-            var parsed = 
+            
 
             // Read file by lines of code using StreamReader.
             var fileStream = File.OpenText(filePath);
@@ -52,12 +76,12 @@ namespace NewRepo
 
             //upload data to the database.
            
-            Console.WriteLine(allText);
+           // Console.WriteLine(allText);
             
-                var cs = @"Server=localhost\SQLEXPRESS;Database=etl;Trusted_Connection=True;";
+                //var cs = @"Server=localhost\SQLEXPRESS;Database=etl;Trusted_Connection=True;";
 
-                using var con = new SqlConnection(cs);
-                con.Open()
+                //using var con = new SqlConnection(cs);
+                //con.Open()
 
             // read myClass = new read();
             // myClass.rea("some string");
@@ -82,17 +106,6 @@ namespace NewRepo
             return Encoding.Unicode.GetString(data);
         }
 
-        public static string parse (string parsefile)
-        {
-
-            var allText = ParseData.ReferenceEquals
-             TextReader.parsedata
-             GetParsedata.tsv
-             Console.WriteLine(ParseData);
-             return ParseData;
-
-
-        }
 
         
  }   }
