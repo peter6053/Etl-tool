@@ -9,16 +9,10 @@ namespace NewRepo
 {
     class ParseData
     {
-        // static void main(string[] args)
-        // {
-        //     var allTEXT= parsedata.ReferenceEquals
-        //     TextReader.parsedata
-        //     GetParsedata.tsv
-        //     console.writeline(parsedata);
-        //
-        //    
-        //
-        // }
+
+
+
+
     }
     
     
