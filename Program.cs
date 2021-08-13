@@ -22,7 +22,7 @@ namespace NewRepo
   
             foreach(String s in strlist)
             {
-                Console.WriteLine(datass);
+                Console.WriteLine(datas);
             }
             
 
