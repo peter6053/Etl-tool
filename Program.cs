@@ -11,8 +11,9 @@ namespace NewRepo
     {
          static void Main(string[] args)
         {
-            var data
-                // Taking a string
+            // Input start
+            IParsedFile file = new ParsedFile("filepath");
+            IParsedLine firstLine = file.NextLine();
             String str = "products,";
   
             
@@ -22,7 +23,11 @@ namespace NewRepo
   
             foreach(String s in strlist)
             {
+
+                Console.WriteLine();
+
                 Console.WriteLine(datas);
+
             }
             
 
@@ -138,7 +143,7 @@ namespace NewRepo
     //         }
     //     }
     // }
-}
+
 
 
 // static void Main(string[] args)
