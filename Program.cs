@@ -7,19 +7,45 @@ using System.Data.SqlClient;
 
 namespace NewRepo
 {
+    interface IParsedFile
+    {
+        IParsedLine NextLine();
+    }
+
+    class ParsedFile : IParsedFile
+    {
+        private string filePath;
+        public ParsedFile(string filePath)
+        {
+            this.filePath = filePath;
+        }
+
+        public IParsedLine NextLine()
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    interface IParsedLine
+    {
+        
+    }
+    
     class ParseData
     {
-         static void Main(string[] args)
+         static void Parse(string[] args)
         {
             // Input start
             IParsedFile file = new ParsedFile("filepath");
             IParsedLine firstLine = file.NextLine();
             String str = "products,";
-  
-            
+
+            string spearator = string.Empty,
+                count = string.Empty, 
+                datas = string.Empty;
   
             // using the method
-            String[] strlist = str.Split(spearator, count);
+            String[] strlist = str.Split(spearator);
   
             foreach(String s in strlist)
             {
@@ -124,7 +150,7 @@ namespace NewRepo
 
              
         
-    }
+    //}
 
     // class read
     // {
