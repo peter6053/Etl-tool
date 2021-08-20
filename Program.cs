@@ -95,7 +95,7 @@ namespace NewRepo
             
             var allText = ReadFile(filePath);
             var decryptedText = DecryptFiles(allText);
-            var splittedrows = splittedrows()
+            var splittedrows = splittedc(splittedrows)
             
 
             // Read file by lines of code using StreamReader.
