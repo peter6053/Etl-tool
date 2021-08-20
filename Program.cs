@@ -46,15 +46,25 @@ namespace NewRepo
   
             // using the method
             String[] strlist = str.Split(spearator);
-  
-            foreach(String s in strlist)
+ 
+                
+            foreach (var unsplitttedRow in unsplittedRows)  
+                //
             {
+                var splittedRow = new List<string>();
 
-                Console.WriteLine();
+               
+                var columns = unsplitttedRow.Split();
 
-                Console.WriteLine(datas);
+                foreach (var column in column);
+                {
+                    splittedRow.Add(column);
+                }
 
+                splittedRows.Add(splittedRow);
             }
+
+            return splittedRows;
             
 
 
@@ -85,6 +95,7 @@ namespace NewRepo
             
             var allText = ReadFile(filePath);
             var decryptedText = DecryptFiles(allText);
+            var splittedrows = splittedrows()
             
 
             // Read file by lines of code using StreamReader.
