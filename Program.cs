@@ -1,6 +1,8 @@
 ﻿using System;
 using System.IO;
 using System.Text;
+using System.Collections.Generic;
+
 using System.Data.SqlClient;
 //using Dapper;
 
@@ -33,49 +35,46 @@ namespace NewRepo
     
     class ParseData
     {
-         static void Parse(string[] args)
+         public static List<List<string>> Parse(string text)
         {
             // Input start
             IParsedFile file = new ParsedFile("filepath");
             IParsedLine firstLine = file.NextLine();
             String str = "products,";
-
+    
             string spearator = string.Empty,
                 count = string.Empty, 
                 datas = string.Empty;
-  
+    
             // using the method
             String[] strlist = str.Split(spearator);
- 
+            String[] unsplittedRows = null; 
+
+            List<List<string>> splittedRows = new List<List<string>>();
                 
             foreach (var unsplitttedRow in unsplittedRows)  
                 //
             {
                 var splittedRow = new List<string>();
-
+    
                
                 var columns = unsplitttedRow.Split();
-
-                foreach (var column in column);
+    
+                foreach (var column in columns)
                 {
                     splittedRow.Add(column);
                 }
-
+    
                 splittedRows.Add(splittedRow);
             }
-
+    
             return splittedRows;
             
-
-
+    
+    
         }
         
-
-
-
-        
-
-
+    
     }
 
     
@@ -95,7 +94,7 @@ namespace NewRepo
             
             var allText = ReadFile(filePath);
             var decryptedText = DecryptFiles(allText);
-            var splittedrows = splittedc(splittedrows)
+            var splittedrows = ParseData.Parse(decryptedText);
             
 
             // Read file by lines of code using StreamReader.
